@@ -1,0 +1,21 @@
+body{
+    background-image: url(https://news.shaneperrymarketing.com/wp-content/uploads/2018/05/business-team-powerpoint-templates.jpg);
+    object-fit: contain;
+}
+.container{
+    text-align: center;
+}
+
+/* Error class */
+.success, .error{
+    color: #fff;
+    padding: 5px;
+    margin:5px 0 5px 0;
+}
+.success{
+    background-color: green;
+}
+
+.error{
+    background-color: red;
+}

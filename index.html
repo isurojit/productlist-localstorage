@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Task List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ui container">
+        <!-- Input Section -->
+        <div class="ui sizer vertical segment">
+            <div class="ui huge header">Product Task List</div>
+        </div>
+        <form id="task-form">
+            <div class="ui relaxed divided list">
+                <div class="item">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                        Task Name
+                        </div>
+                        <input type="text" id="task-name" placeholder="Enter Your Task">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                        Task Date
+                        </div>
+                        <input type="date" id="task-date">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                        Task Time
+                        </div>
+                        <input type="time" id="task-time">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                        Task Assigned Employee
+                        </div>
+                        <input type="text" id="task-by" placeholder="Task Assigned For">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                        Task ID
+                        </div>
+                        <input type="text" id="task-id" placeholder="Task ID">
+                    </div>
+                </div>
+            </div>
+            <button class="fluid ui button" type="submit">Assign Task</button>
+        </form>
+        <!-- Output Section -->
+        <table class="ui compact celled definition table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Task Name</th>
+                <th>Task Date</th>
+                <th>Task Time</th>
+                <th>Assigned Employee</th>
+                <th>Task ID</th>
+              </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
